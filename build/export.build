@@ -1,0 +1,6 @@
+$out_root/
+{
+  include concurrentqueue/
+}
+
+export $out_root/concurrentqueue/$import.target
