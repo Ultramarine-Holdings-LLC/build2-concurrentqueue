@@ -1,0 +1,5 @@
+: 1
+name: concurrentqueue
+version: 1.0.3
+summary: concurrentqueue C++ library
+license: BSD-2-Clause
