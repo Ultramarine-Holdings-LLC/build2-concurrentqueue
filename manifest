@@ -1,6 +1,6 @@
 : 1
 name: concurrentqueue
-version: 1.0.3-a.0.z
+version: 1.0.3
 summary: concurrentqueue C++ library
 license: BSD-2-Clause
 url: https://github.com/cameron314/concurrentqueue
