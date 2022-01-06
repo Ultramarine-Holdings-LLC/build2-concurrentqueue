@@ -3,3 +3,5 @@ cxx.std = latest
 using cxx
 
 hxx{*}: extension = h
+
+using c

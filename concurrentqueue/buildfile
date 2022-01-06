@@ -3,7 +3,8 @@ lib{concurrentqueue}: hxx{*}
   cxx.export.poptions += "-I$src_base"
 }
 
-../upstream/include/
+if ($cxx.target.class != 'windows')
 {
-  hxx{*}: install.subdirs = true
+    cxx.libs += "-lpthread"
+    lib{concurrentqueue}: cxx.export.libs += "-lpthread"
 }

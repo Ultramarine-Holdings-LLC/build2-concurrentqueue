@@ -1,8 +1,9 @@
 : 1
 name: concurrentqueue
-version: 1.0.3
-summary: concurrentqueue C++ library
+version: 1.0.3+1
+summary: A fast multi-producer, multi-consumer lock-free concurrent queue for C++11
 license: BSD-2-Clause
+description-file: upstream/README.md
 url: https://github.com/cameron314/concurrentqueue
 depends: * build2 >= 0.14.0
 depends: * bpkg >= 0.14.0

@@ -1,0 +1,8 @@
+import libs = concurrentqueue%lib{concurrentqueue}
+
+cxx.poptions += "-I$src_base"
+
+exe{driver}: hxx{corealgos minitest} common/{hxx cxx}{simplethread systemtime} cxx{mallocmacro unittests} $libs
+{
+    test.options = --disable-prompt
+}
