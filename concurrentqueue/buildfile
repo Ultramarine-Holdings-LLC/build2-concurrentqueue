@@ -1,10 +1,9 @@
 lib{concurrentqueue}: hxx{*}
 {
-  cxx.export.poptions += "-I$src_base"
+    cxx.export.poptions += "-I$src_base"
 }
 
 if ($cxx.target.class != 'windows')
 {
-    cxx.libs += "-lpthread"
     lib{concurrentqueue}: cxx.export.libs += "-lpthread"
 }
