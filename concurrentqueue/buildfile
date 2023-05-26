@@ -8,3 +8,11 @@ if ($cxx.target.class != 'windows')
     cxx.libs += "-lpthread"
     lib{concurrentqueue}: cxx.export.libs += "-lpthread"
 }
+
+hxx{*}:
+{
+  install         = include/concurrentqueue/
+  install.subdirs = true
+}
+
+lib{concurrentqueue}: cxx.pkgconfig.include = include/concurrentqueue/
