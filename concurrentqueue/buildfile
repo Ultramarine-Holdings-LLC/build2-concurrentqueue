@@ -15,4 +15,4 @@ hxx{*}:
   install.subdirs = true
 }
 
-lib{concurrentqueue}: cxx.pkgconfig.include = include/concurrentqueue/
+lib{concurrentqueue}: cxx.pkgconfig.include = include/ include/concurrentqueue/
