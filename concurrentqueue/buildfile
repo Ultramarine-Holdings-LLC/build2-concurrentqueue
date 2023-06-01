@@ -1,6 +1,6 @@
 lib{concurrentqueue}: hxx{*}
 {
-  cxx.export.poptions += "-I$src_base"
+  cxx.export.poptions += "-I$src_base" "-I$src_root"
 }
 
 if ($cxx.target.class != 'windows')
@@ -8,3 +8,11 @@ if ($cxx.target.class != 'windows')
     cxx.libs += "-lpthread"
     lib{concurrentqueue}: cxx.export.libs += "-lpthread"
 }
+
+hxx{*}:
+{
+  install         = include/concurrentqueue/
+  install.subdirs = true
+}
+
+lib{concurrentqueue}: cxx.pkgconfig.include = include/ include/concurrentqueue/

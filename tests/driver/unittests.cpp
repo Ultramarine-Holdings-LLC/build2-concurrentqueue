@@ -30,7 +30,7 @@ void operator delete(void* ptr, MakeSureCustomNewCanPeacefullyCoexist* x);
 #include <common/simplethread.h>
 #include <common/systemtime.h>
 #include <concurrentqueue.h>
-#include <blockingconcurrentqueue.h>
+#include <concurrentqueue/blockingconcurrentqueue.h>
 
 namespace {
 	struct tracking_allocator
